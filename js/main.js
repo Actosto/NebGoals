@@ -220,7 +220,8 @@ function showAd(ad) {
     if (ad != null) {
         ad.wasMarked = ad.isMarked;
         let markedClass = ad.isMarked ? " block-marked" : "";
-        let editBtn = deleteBtn = "";
+        let editBtn = "";
+        let deleteBtn = "";
         ad.message = ad.message.replaceAll("#n", "<br>");
 
         if (ad.wallet == account.wallet) {
