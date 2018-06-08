@@ -1,8 +1,3 @@
-// test
-$("#openAdPopup").on('click', () => {
-    $("#createModal .status").html("");
-});
-
 function onCreateHandler() {
     $(`#createForm`).submit((event) => {
         event.preventDefault();
@@ -289,7 +284,7 @@ function deleteGoal(ad) {
         return;
     }
 
-    contract.delete(ad.id,
+    contract.deleteGoal(ad.id,
         resp => {
             loadGoals();
         },

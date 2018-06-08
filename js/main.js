@@ -28,5 +28,9 @@ $(document).ready(() => {
     onMarkHandler();
     loadMyGoalsHandler();
 
+    $("#openAdPopup").on('click', () => {
+        $("#createModal .status").html("");
+    });
+
     loadGoals();
 });

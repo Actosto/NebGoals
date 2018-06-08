@@ -151,7 +151,7 @@ class ContractApi extends SmartContractApi {
         });
     }
 
-    delete(id, callback, callbackError) {
+    deleteGoal(id, callback, callbackError) {
         this._call({
             callArgs: `[${id}]`,
             callFunction: "delete",
