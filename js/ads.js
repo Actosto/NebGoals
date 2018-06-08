@@ -1,3 +1,4 @@
+// test
 $("#openAdPopup").on('click', () => {
     $("#createModal .status").html("");
 });
